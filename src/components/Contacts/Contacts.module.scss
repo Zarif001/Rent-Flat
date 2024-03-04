@@ -1,0 +1,78 @@
+.contacts {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    color: rgb(43, 122, 241);
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+    p {
+      color: rgb(17, 17, 17);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+  .item:nth-of-type(4) {
+    margin-top: 80px;
+    justify-content: space-between;
+    margin-right: 40px;
+
+    button {
+      border-radius: 25px;
+      box-shadow: 0px 10px 20px 0px rgba(255, 122, 0, 0.2);
+      background: linear-gradient(
+        87.14deg,
+        rgb(255, 122, 0) 0.11%,
+        rgb(255, 176, 57) 99.901%
+      );
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      border: none;
+      padding: 8px 20px;
+      cursor: pointer;
+    }
+  }
+  .item:nth-of-type(5) {
+    justify-content: space-between;
+    margin-right: 40px;
+
+    button {
+      cursor: pointer;
+      border-radius: 25px;
+      box-shadow: 0px 10px 20px 0px rgba(255, 122, 0, 0.2);
+      background: linear-gradient(
+        87.14deg,
+        rgb(255, 122, 0) 0.11%,
+        rgb(255, 176, 57) 99.901%
+      );
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      border: none;
+      padding: 8px 20px;
+    }
+  }
+}
