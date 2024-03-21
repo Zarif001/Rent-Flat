@@ -12,7 +12,7 @@ import { Container } from "react-bootstrap";
 function Contacts() {
   return (
     <Container>
-      <div className={styles.contacts}>
+      <div id="contacts" className={styles.contacts}>
         <div style={{width: '100%'}}>
           <h3>Контакты</h3>
           <div className={styles.item}>

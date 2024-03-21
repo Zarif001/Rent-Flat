@@ -7,7 +7,7 @@ import styles from './Review.module.scss'
 import './Slider.scss'
 import RatingStars from "../RatingStars/RatingStars";
 
-function Review() {
+function Reviews() {
   var settings = {
     dots: true,
     infinite: true,
@@ -80,4 +80,4 @@ function Review() {
   );
 }
 
-export default Review;
+export default Reviews;

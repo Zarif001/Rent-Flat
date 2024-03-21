@@ -8,7 +8,7 @@ import icon7 from '../../images/icon7.svg'
 function About() {
     return (
         <BoxContainer>
-        <div className={styles.about}>
+        <div id='about' className={styles.about}>
             <h2>О нас</h2>
             <div className={styles.items}>
                 <p className={styles.text}>Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично расширяющая географический охват и повышающая качество сервиса.</p>

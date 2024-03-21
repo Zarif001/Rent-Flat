@@ -15,30 +15,32 @@ function Footer() {
 
       <BoxContainer>
         <div className={styles.content}>
+          <div className={styles.contentBox}>
+
           <img className={styles.img} src={logo} alt="*" />
 
           <ul className={styles.list}>
             <li>
-              <a href="">Главная</a>
+              <a className={styles.link} href="">Главная</a>
             </li>
             <li>
-              <a href="">Квартиры </a>
+              <a className={styles.link} href="">Квартиры </a>
             </li>
             <li>
-              <a href=""> Контакты</a>
+              <a className={styles.link} href=""> Контакты</a>
             </li>
             <li>
-              <a href="">О нас</a>
+              <a className={styles.link} href="">О нас</a>
             </li>
-            <li>
+            <li className={styles.imgBox}>
               <img src={mail} alt="*" />
-              <a href="">mail@yandex.ru</a>
+              <a  href="">mail@yandex.ru</a>
             </li>
-            <li>
+            <li className={styles.imgBox}>
               <img src={call2} alt="*" />
-              <a href="">+7 (919) 714-25-00</a>
+              <a  href="">+7 (919) 714-25-00</a>
             </li>
-            <div>
+            <div className={styles.pictures}>
               <a href="">
                 <img src={tg} alt="*" />
               </a>
@@ -53,6 +55,12 @@ function Footer() {
               </a>
             </div>
           </ul>
+        </div>
+        <div className={styles.rectangle}></div>
+        <div className={styles.lastContent}>
+          <p className={styles.text}>© Copyright 2021, «Домашняя гостиница»</p>
+          <p className={styles.text}>Пользовательское соглашение</p>
+        </div>
         </div>
       </BoxContainer>
     </div>

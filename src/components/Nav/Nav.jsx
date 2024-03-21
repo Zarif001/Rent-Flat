@@ -5,18 +5,29 @@ import emailSvg from '../../images/email.svg'
 import call from '../../images/call.svg'
 import styles from './Nav.module.scss';
 
-function Nav() {
+function Nav({onOpen}) {
+  
     return(
         <BoxContainer>
         <div className={styles.nav}>
             <div className={styles.logo}>
+                <a href="/">
                 <img src={logo} alt={logo}/>
+                </a>
             </div>
             <ul className={styles.list}>
-                <li>Главная</li>
-                <li>Квартиры</li>
-                <li>Контакты</li>
-                <li>О нас</li>
+              <li>
+                <a href="/">Главная</a>
+              </li>
+              <li>
+                <a href="#flats">Квартиры</a>
+              </li>
+              <li>
+                <a href="#about">О нас</a>
+              </li>
+              <li>
+                <a href="#contacts">Контакты</a>
+              </li>
             </ul>
 
                 <div className={styles.infoBg}>
@@ -28,7 +39,7 @@ function Nav() {
                     <img src={call} alt={call} />
                         <span>+7 (919) 714-25-00</span>
                 </div>
-            <button>Заказать звонок</button>
+            <button onClick={onOpen}>Заказать звонок</button>
 
                 </div>
         </div>
