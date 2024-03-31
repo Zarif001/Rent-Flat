@@ -2,6 +2,7 @@
   padding-top: 30.16px;
   display: flex;
   align-items: center;
+  position: relative;
 
   .logo {
     img {
@@ -14,6 +15,7 @@
     display: flex;
     align-items: center;
     margin-left: 55px;
+    animation: opacity 1s;
 
     a {
       margin-right: 40px;
@@ -22,11 +24,6 @@
       font-size: 16px;
       font-weight: 600;
       line-height: 20px;
-
-      .boxWImages {
-        display: flex;
-        align-items: center;
-      }
     }
     .lastLi {
       margin-right: 25px;
@@ -69,6 +66,158 @@
       );
       border: none;
       cursor: pointer;
+    }
+  }
+  .burgerMenu {
+    order: -1;
+    margin-right: 18px;
+    display: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    .icons {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+// Aside
+
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Задаем прозрачный цвет фона */
+  z-index: 99;
+
+  .asideContent {
+    width: 500px;
+    background: rgb(43, 122, 241);
+    height: 100%;
+    padding: 15px 0 0 20px;
+    animation: showContent linear 0.8s;
+  }
+  .asideList {
+    margin-top: 50px;
+    a {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 20px;
+      width: 130px;
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  @keyframes showContent {
+    from {
+      transform: translate(-500px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
+
+// Media
+@media (max-width: 1280px) {
+  .nav {
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .burgerMenu {
+      display: block;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .nav {
+    .infoBg {
+      .boxWImages {
+        span {
+          display: none;
+        }
+        img {
+          margin-right: 15px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      button {
+        padding: 8px 30px 8px 30px;
+        font-size: 16px;
+      }
+    }
+  }
+  .aside {
+    .asideContent {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .nav {
+    .infoBg {
+      .boxWImages {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      button {
+        display: none;
+      }
+    }
+    .logo {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  .aside {
+    .asideContent {
+      width: 250px;
+
+      .asideList {
+        a {
+          font-size: 16px;
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    .logo {
+      img {
+        width: 90px;
+      }
+    }
+  }
+  .aside {
+    .asideContent {
+      width: 220px;
+      .asideList {
+        a {
+          font-size: 15px;
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          width: 100px;
+        }
+      }
     }
   }
 }

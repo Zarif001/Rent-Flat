@@ -1,7 +1,11 @@
 import React, {useEffect}from "react";
 import styles from "./Modal.module.scss";
 import accros from '../../images/accros.svg'
-export default function Modal({onClose}) {
+import { useContext } from "react";
+import { AppContext } from "../../store/AppContex";
+export default function Modal() {
+  
+  const {onClose} = useContext(AppContext)
     const handleKeyEvent = (event) =>{
         if(event.key === 'Escape') {
             onClose()

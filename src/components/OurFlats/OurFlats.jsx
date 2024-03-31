@@ -3,8 +3,10 @@ import styles from "./OurFlats.module.scss";
 import BoxContainer from "../BoxContainer/BoxContainer";
 import { Link } from "react-router-dom";
 import { ALLFLATS } from "../Data/data";
-function OurFlats({onSelect}) {
- 
+import { useContext } from "react";
+import { AppContext } from "../../store/AppContex";
+function OurFlats() {
+  const {onSelectId} = useContext(AppContext)
   return (
     <BoxContainer>
       <div id="flats" className={styles.ourFlats}>
@@ -25,7 +27,7 @@ function OurFlats({onSelect}) {
                     <p>{item.locationText}</p>
                     </div>
                     <Link to='/selectFlats'>
-                    <button onClick={() => onSelect(item.id)}>Подробнее</button>
+                    <button onClick={() => onSelectId(item.id)}>Подробнее</button>
                     </Link>
                   </div>
                 </div>

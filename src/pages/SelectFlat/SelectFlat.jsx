@@ -8,17 +8,21 @@ import Footer from "../../components/Footer/Footer";
 import styles from './SelectFlat.module.scss'
 import SelectedFlat from "../../components/SelectedFlat/SelectedFlat";
 import Modal from "../../components/Modal/Modal";
-function SelectFlat({items, onOpen, onClose, sendMessage}) {
+import { useContext  } from "react";
+import { AppContext } from "../../store/AppContex";
+
+function SelectFlat() {
+  const {messages} = useContext(AppContext)
   return (
     <>
-      {sendMessage && <Modal onClose={onClose}/>}
+      {messages && <Modal />}
 
     <header className={styles.header}>
-      <Nav onOpen={onOpen}/>
+      <Nav />
       <div className={styles.background}></div>
     </header>
     <main className={styles.main}>
-      <SelectedFlat id={items} onOpen={onOpen} />
+      <SelectedFlat/>
       <About/>
       <Contacts/>
       <Reviews/>

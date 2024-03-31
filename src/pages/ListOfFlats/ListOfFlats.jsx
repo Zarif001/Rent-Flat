@@ -7,18 +7,21 @@ import Reviews from "../../components/Reviews/Reviews";
 import Request from "../../components/Request/Request";
 import Footer from "../../components/Footer/Footer";
 import Modal from "../../components/Modal/Modal";
+import { useContext } from "react";
+import { AppContext } from "../../store/AppContex";
 import './ListOfFlats.scss'
 
-function ListOfFlats({onSelect, onOpen, onClose, sendMessage}) {
+function ListOfFlats() {
+  const {messages} = useContext(AppContext)
   return (
     <>
-     {sendMessage && <Modal onClose={onClose}/>}
+     {messages && <Modal/>}
     <header className="header">
-      <Nav onOpen={onOpen}/>
+      <Nav/>
       <div className="background"></div>
     </header>
     <main className='main'>
-      <AllFlats onSelect={onSelect}/>
+      <AllFlats/>
       <About/>
       <Contacts/>
       <Reviews/>

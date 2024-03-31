@@ -3,9 +3,11 @@ import BoxContainer from '../BoxContainer/BoxContainer'
 import styles from './AllFlats.module.scss'
 import { ALLFLATS } from '../Data/data'
 import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import { AppContext } from '../../store/AppContex';
 
-
-export default function AllFlats({onSelect}) {
+export default function AllFlats() {
+    const {onSelectId} = useContext(AppContext)
     return(
         <BoxContainer>
         <div className={styles.allFlats}>
@@ -23,7 +25,7 @@ export default function AllFlats({onSelect}) {
                      <p>{item.locationText}</p>
                  </div>
                  <Link to='/selectFlats'>
-                 <button onClick={() => onSelect(item.id)}>Подробнее</button>
+                 <button onClick={() => onSelectId(item.id)}>Подробнее</button>
                  </Link>
              </div>
             ))}

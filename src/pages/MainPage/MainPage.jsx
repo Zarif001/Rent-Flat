@@ -9,18 +9,21 @@ import Reviews from "../../components/Reviews/Reviews";
 import Request from "../../components/Request/Request";
 import Footer from "../../components/Footer/Footer";
 import Modal from "../../components/Modal/Modal";
+import { useContext } from "react";
+import { AppContext } from "../../store/AppContex";
 
-function MainPage({onSelect, onOpen, onClose, sendMessage}) {
+function MainPage() {
+  const {messages} = useContext(AppContext)
   return (
     <>
-      {sendMessage && <Modal onClose={onClose}/>}
+      {messages && <Modal/>}
       <header className={styles.header}>
-        <Nav onOpen={onOpen} />
+        <Nav />
         <RentItem />
         <div className={styles.background}></div>
       </header>
-      <main className={styles.main}>
-        <OurFlats onSelect={onSelect}/>
+      {/* <main className={styles.main}>
+        <OurFlats/>
         <About/>
         <Contacts/>
         <Reviews/>
@@ -28,7 +31,7 @@ function MainPage({onSelect, onOpen, onClose, sendMessage}) {
       </main>
       <footer>
         <Footer/>
-      </footer>
+      </footer> */}
     </>
   );
 }
