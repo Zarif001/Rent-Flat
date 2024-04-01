@@ -22,16 +22,16 @@ function MainPage() {
         <RentItem />
         <div className={styles.background}></div>
       </header>
-      {/* <main className={styles.main}>
+      <main className={styles.main}>
         <OurFlats/>
-        <About/>
-        <Contacts/>
-        <Reviews/>
-        <Request/>
+        {/* <About/> */}
+        {/* <Contacts/> */}
+        {/* <Reviews/> */}
+        {/* <Request/> */}
       </main>
       <footer>
-        <Footer/>
-      </footer> */}
+        {/* <Footer/> */}
+      </footer>
     </>
   );
 }

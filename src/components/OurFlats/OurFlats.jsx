@@ -19,10 +19,10 @@ function OurFlats() {
                   <img src={item.image} alt={item.image} />
                 </div>
                 <div className={styles.item}>
-                  <h3>{item.title}</h3>
-                  <p><span>{item.span}</span></p>
+                  <h3>{innerWidth < 1280 ? item.titleRes : item.title} </h3>
+                  <p>Сутки: <span>{item.span}</span></p>
                   <div className={styles.location}>
-                    <div style={{display: 'flex'}}>
+                  <div style={{display: innerWidth < 1280 ? 'none' : 'flex' }}>
                     <img src={item.locationImg} alt={item.locationImg} />
                     <p>{item.locationText}</p>
                     </div>
