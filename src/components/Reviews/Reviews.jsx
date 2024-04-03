@@ -8,10 +8,11 @@ import './Slider.scss'
 import RatingStars from "../RatingStars/RatingStars";
 
 function Reviews() {
+  const responsiveWidth = innerWidth < 1000 ? 1 : 2
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: responsiveWidth,
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     pauseOnHover: true

@@ -70,3 +70,106 @@
     }
   }
 }
+@media(max-width:1280px){
+  .sliderContainer{
+    .title{
+      font-size: 32px;
+    }
+    .items{
+      .text{
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media(max-width:1000px){
+  .sliderContainer{
+    .title{
+      font-size: 29px;
+    }
+    .items{
+      .text{
+        width: 100%;
+      }
+    }
+  }
+}
+@media(max-width:769px){
+  .sliderContainer{
+    .title{
+      font-size: 27px;
+    }
+    .items{
+      .caption{
+        h3{
+          font-size: 17px;
+        }
+        div{
+          div{
+            div{
+              span{
+                font-size: 20px!important;
+              }
+            }
+          }
+        }
+      }
+      .text{
+        width: 100%;
+        font-size: 12px;
+      }
+      .captionBox{
+        h5{
+          font-size: 13px;
+        }
+        span{
+          font-size: 11px;
+        }
+        .data{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:480px){
+  .sliderContainer{
+    .title{
+      font-size: 24px;
+    }
+    .items{
+      padding: 20px;
+      .caption{
+        h3{
+          font-size: 14px;
+        }
+        div{
+          div{
+            div{
+              span{
+                font-size: 13px!important;
+              }
+            }
+          }
+        }
+      }
+      .text{
+        width: 100%;
+        font-size: 10px;
+        line-height: 18px;
+      }
+      .captionBox{
+        h5{
+          font-size: 12px;
+        }
+        span{
+          font-size: 10px;
+        }
+        .data{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

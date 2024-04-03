@@ -24,9 +24,9 @@ function MainPage() {
       </header>
       <main className={styles.main}>
         <OurFlats/>
-        {/* <About/> */}
-        {/* <Contacts/> */}
-        {/* <Reviews/> */}
+        <About/>
+        <Contacts/>
+        <Reviews/>
         {/* <Request/> */}
       </main>
       <footer>

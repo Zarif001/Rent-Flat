@@ -225,6 +225,7 @@
     }
     .flats{
       flex-wrap: wrap;
+      justify-content: space-between;
       .items{
         width: 170px;
 
