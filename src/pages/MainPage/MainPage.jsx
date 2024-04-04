@@ -27,10 +27,10 @@ function MainPage() {
         <About/>
         <Contacts/>
         <Reviews/>
-        {/* <Request/> */}
+        <Request/>
       </main>
       <footer>
-        {/* <Footer/> */}
+        <Footer/>
       </footer>
     </>
   );

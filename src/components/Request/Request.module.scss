@@ -96,3 +96,88 @@
     }
   }
 }
+@media(max-width:1280px){
+  .request{
+    .requestForm{
+      h4{
+        font-size: 32px;
+      }
+      .form{
+        input{
+          width: 290px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:1000px){
+  .request{
+    .requestForm{
+      width: 350px;
+      h4{
+        font-size: 29px;
+      }
+      .form{
+        .input{
+          width: 270px;
+        }
+        button{
+          width: 180px;
+        }
+      }
+    }
+    .leftBox{
+      p{
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media(max-width:769px){
+  .request{
+    .requestForm{
+      max-width: 100%;
+      margin: 0 10px;
+      width: 100%;
+      h4{
+        font-size: 27px;
+      }
+      .form{
+        button{
+          width: 210px;
+          padding: 10px 30px;
+          font-size: 15px;
+        }
+      }
+    }
+    .leftBox{
+      display: none;
+    }
+  }
+}
+@media(max-width:480px){
+  .request{
+    .requestForm{
+      max-width: 100%;
+      margin: 0 10px;
+      width: 100%;
+      h4{
+        font-size: 24px;
+      }
+      .form{
+        .input{
+          width: 250px;
+          font-size: 14px;
+        }
+        button{
+          width: 210px;
+          padding: 8px 25px;
+          font-size: 14px;
+        }
+      }
+    }
+    .leftBox{
+      display: none;
+    }
+  }
+}
