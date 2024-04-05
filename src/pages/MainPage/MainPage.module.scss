@@ -23,7 +23,14 @@
 @media(max-width:1000px){
     .header{
         .background{
-            width: 52%;
+            width: 52%; 
+        }
+    }
+}
+@media(max-width:480px){
+    .header{
+        .background{
+            width: 50%;
         }
     }
 }

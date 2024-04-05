@@ -151,3 +151,16 @@
     }
   }
 }
+@media(max-width:480px){
+  .allFlats{
+    h2{
+      font-size: 24px;
+    }
+    .cards{
+      .items{
+        max-width: 90%;
+        width: 100%;
+      }
+    }
+  }
+}
