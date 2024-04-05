@@ -11,8 +11,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          {/* <Route path="/allFlats" element={<ListOfFlats />} /> */}
-          {/* <Route path="/selectFlats" element={<SelectFlat />} /> */}
+          <Route path="/allFlats" element={<ListOfFlats />} />
+          <Route path="/selectFlats" element={<SelectFlat />} />
         </Routes>
       </div>
     </AppContextProvider>
