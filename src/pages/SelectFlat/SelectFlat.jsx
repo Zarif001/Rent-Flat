@@ -12,7 +12,15 @@ import { useContext  } from "react";
 import { AppContext } from "../../store/AppContex";
 
 function SelectFlat() {
-  const {messages} = useContext(AppContext)
+  const { messages, onOpen } = useContext(AppContext);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onOpen();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       {messages && <Modal />}

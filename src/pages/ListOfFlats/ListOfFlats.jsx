@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../../components/Nav/Nav";
 import AllFlats from "../../components/AllFlats/AllFlats";
 import About from "../../components/About/About";
@@ -12,7 +12,15 @@ import { AppContext } from "../../store/AppContex";
 import './ListOfFlats.scss'
 
 function ListOfFlats() {
-  const {messages} = useContext(AppContext)
+  const { messages, onOpen } = useContext(AppContext);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onOpen();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
      {messages && <Modal/>}

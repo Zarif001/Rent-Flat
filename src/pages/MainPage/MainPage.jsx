@@ -9,28 +9,36 @@ import Reviews from "../../components/Reviews/Reviews";
 import Request from "../../components/Request/Request";
 import Footer from "../../components/Footer/Footer";
 import Modal from "../../components/Modal/Modal";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../../store/AppContex";
 
 function MainPage() {
-  const {messages} = useContext(AppContext)
+  const { messages, onOpen } = useContext(AppContext);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onOpen();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      {messages && <Modal/>}
+      {messages && <Modal />}
       <header className={styles.header}>
         <Nav />
         <RentItem />
         <div className={styles.background}></div>
       </header>
       <main className={styles.main}>
-        <OurFlats/>
-        <About/>
-        <Contacts/>
-        <Reviews/>
-        <Request/>
+        <OurFlats />
+        <About />
+        <Contacts />
+        <Reviews />
+        <Request />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );

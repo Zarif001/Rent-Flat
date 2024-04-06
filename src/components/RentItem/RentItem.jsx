@@ -30,16 +30,16 @@ function RentItem() {
           <p>Заключаем договоры, предоставляет отчётные документы</p>
         </div>
         <div className={styles.item}>
-          <img src={icon2} alt={icon2} />
+          <img src={icon2} alt={icon2}loading="lazy" />
           <p>Наличный и
 безналичный расчёт</p>
         </div>
         <div className={styles.item}>
-          <img src={icon3} alt={icon3} />
+          <img src={icon3} alt={icon3}loading="lazy" />
           <p>Бронирование и заселение круглосуточно</p>
         </div>
         <div className={styles.item}>
-          <img src={icon4} alt={icon4} />
+          <img src={icon4} alt={icon4} loading="lazy" />
           <p>Полная 
 конфиденциальность</p>
         </div>

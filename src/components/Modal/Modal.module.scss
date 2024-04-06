@@ -37,7 +37,6 @@
       font-weight: 400;
       line-height: 22px;
       text-align: center;
-      width: 369px;
       margin-bottom: 30px;
     }
     form {
@@ -72,11 +71,97 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 20px;
-        letter-spacing: 0%;
         text-align: center;
         border: none;
         width: 200px;
         cursor: pointer;
+      }
+    }
+  }
+}
+@media(max-width:1000px){
+  .modal{
+    .modalContent{
+      width: 400px;
+      height: 400px;
+    }
+    .modalItems {
+      h4{
+        font-size: 32px;
+        line-height: 38px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 20px;
+      }
+      form{
+        input{
+          width: 280px;
+        }
+        button{
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:769px){
+  .modal{
+    .modalContent{
+      padding: 10px;
+      width: 350px;
+      height: 350px;
+    }
+    .modalItems {
+      h4{
+        font-size: 27px;
+        line-height: 32px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 18px;
+      }
+      form{
+        input{
+          width: 250px;
+          font-size: 14px;
+          padding: 8px 0 8px 18px;
+        }
+        button{
+          width: 180px;
+          padding: 10px 25px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:480px){
+  .modal{
+    .modalContent{
+      padding: 10px;
+      width: 350px;
+      height: 350px;
+    }
+    .modalItems {
+      h4{
+        font-size: 22px;
+        line-height: 28px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 16px;
+      }
+      form{
+        input{
+          width: 200px;
+          font-size: 14px;
+          padding: 5px 0 5px 15px;
+        }
+        button{
+          margin-top: 15px;
+          padding: 8px 20px;
+          font-size: 14px;
+        }
       }
     }
   }
