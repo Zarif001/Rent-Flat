@@ -12,15 +12,8 @@ import { AppContext } from "../../store/AppContex";
 import './ListOfFlats.scss'
 
 function ListOfFlats() {
-  const { messages, onOpen } = useContext(AppContext);
+  const {messages} = useContext(AppContext)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      onOpen();
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
      {messages && <Modal/>}
