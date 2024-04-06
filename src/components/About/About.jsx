@@ -13,21 +13,21 @@ function About() {
             <div className={styles.items}>
                 <p className={styles.text}>Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично расширяющая географический охват и повышающая качество сервиса.</p>
                 <div className={styles.content}>
-                <div style={{display: 'flex', alignItems:'center'}}>
+                <div style={{display: 'flex', alignItems:'center', marginRight: '10px'}}>
                     <img src={icon5} alt={icon5} />
                     <div>
                         <span>40+</span>
                         <p>Клиентов</p>
                     </div>
                 </div>
-                <div style={{display: 'flex', alignItems:'center'}}>
+                <div style={{display: 'flex', alignItems:'center', marginRight: '10px'}}>
                     <img src={icon6} alt={icon6} />
                     <div>
                         <span>100+</span>
                         <p>Отзывов</p>
                     </div>
                 </div>
-                <div style={{display: 'flex', alignItems:'center'}}>
+                <div style={{display: 'flex', alignItems:'center', marginRight: '10px'}}>
                     <img src={icon7} alt={icon7} />
                     <div>
                         <span>9</span>
